@@ -16,7 +16,7 @@ $hotel_query->execute(['hotel_id' => $hotel_id]);
 
 $hotel = $hotel_query->fetch();
 
-if (!$hotel) die('123');
+if (!$hotel) die('hotel_id is not defined');
 
 echo '<ul>';
 echo "$hotel[name] ($hotel[stars] звезд)<br>";
